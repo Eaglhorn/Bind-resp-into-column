@@ -1,0 +1,17 @@
+<div class="product_box" >
+  <div *ngFor="let book of books">
+    <div class="card card-default">
+      <div class="card-header">{{'Book ID: ' + book.ID}}</div>
+      <div class="card-body card-6-6">
+        <div class="card-right">
+          <h1>{{book.Title}}</h1>
+          <p>{{book.Description}}</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <p>{{book.Excerpt}}</p>
+      </div>
+      <div class="card-footer">Publish Date: {{book.PublishDate | date }} <span> Pages: {{book.PageCount}}</span></div>
+    </div>
+  </div>
+</div>

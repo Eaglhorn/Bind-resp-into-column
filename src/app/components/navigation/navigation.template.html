@@ -1,0 +1,26 @@
+<nav class="navbar-default navbar-static-side" role="navigation">
+  <div class="sidebar-collapse">
+    <ul class="nav metismenu" id="side-menu">
+      <div class="nav-header">
+        <div class="profile-element logo-max">
+          <img src="assets/img/logo2.png" alt="Scalarr">
+        </div>
+        <div class="logo-element logo-min">
+          <img src="assets/img/logo2.png" alt="Scalarr">
+        </div>
+      </div>
+      <!------------------------Products Page------------------------->
+      <li [routerLinkActive]="['active']"
+          [routerLinkActiveOptions]="{exact: true}">
+        <a [routerLink]="['/products/']"><i class="fa fa-book"></i> <span class="nav-label">Products</span> </a>
+      <li>
+
+      <!------------------------Home Page------------------------->
+      <li [routerLinkActive]="['active']"
+          [routerLinkActiveOptions]="{exact: true}">
+        <a [routerLink]="['/home/']"><i class="fa fa-home"></i> <span class="nav-label">Home</span> </a>
+      <li>
+
+    </ul>
+  </div>
+</nav>
